@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Беспроводная аварийная сигнализация для септика — Надежная защита от перелива</title>
+    <title>Беспроводная аварийная сигнализация для септика SepticRF — Надежная защита от перелива</title>
     
     <!-- Подключение Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -49,21 +49,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-        
-        /* Пульсация аварийной лампы */
-        @keyframes alarm-pulse {
-            0%, 100% {
-                transform: scale(1);
-                box-shadow: 0 0 10px rgba(239, 68, 68, 0.8), 0 0 20px rgba(239, 68, 68, 0.4);
-            }
-            50% {
-                transform: scale(1.15);
-                box-shadow: 0 0 25px rgba(239, 68, 68, 1), 0 0 50px rgba(239, 68, 68, 0.7);
-            }
-        }
-        .animate-alarm {
-            animation: alarm-pulse 0.6s infinite;
-        }
 
         /* Декоративный градиентный фон для героя */
         .hero-bg {
@@ -86,7 +71,6 @@
         </span>
     </div>
 
-    <!-- ХЕДЕР -->
     <header class="sticky top-0 bg-white/95 backdrop-blur-md shadow-sm z-40 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Логотип -->
@@ -95,7 +79,7 @@
                     <i data-lucide="shield-alert" class="w-6 h-6"></i>
                 </div>
                 <div>
-                    <span class="text-xl font-extrabold tracking-tight text-brand-dark block leading-none">СЕПТИК-SOS</span>
+                    <span class="text-xl font-extrabold tracking-tight text-brand-dark block leading-none">SepticRF</span>
                     <span class="text-[10px] uppercase tracking-widest text-brand-medium font-bold block mt-1">Системы безопасности</span>
                 </div>
             </a>
@@ -105,17 +89,12 @@
                 <a href="#benefits" class="hover:text-brand-emerald transition-colors">Преимущества</a>
                 <a href="#how-it-works" class="hover:text-brand-emerald transition-colors">Как это работает</a>
                 <a href="#specifications" class="hover:text-brand-emerald transition-colors">Характеристики</a>
-                <a href="#reviews" class="hover:text-brand-emerald transition-colors">Отзывы</a>
             </nav>
 
-            <!-- Кнопка и телефон -->
+            <!-- Кнопка заказа -->
             <div class="flex items-center gap-4">
-                <a href="tel:+78005553535" class="hidden lg:flex flex-col items-end">
-                    <span class="text-sm text-gray-500 font-medium">Бесплатный звонок</span>
-                    <span class="text-base font-bold text-brand-dark hover:text-brand-emerald transition-colors">+7 (800) 555-35-35</span>
-                </a>
                 <a href="#order" class="bg-brand-emerald hover:bg-brand-dark text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all shadow-md shadow-brand-emerald/10 hover:shadow-lg hover:-translate-y-0.5">
-                    Заказать звонок
+                    Оставить заявку
                 </a>
                 <!-- Бургер меню для мобильных -->
                 <button id="menu-btn" class="p-2 text-gray-600 md:hidden hover:text-brand-emerald focus:outline-none" aria-label="Открыть меню">
@@ -129,16 +108,9 @@
             <a href="#benefits" class="block py-2 px-3 hover:bg-brand-light rounded-lg font-medium text-gray-700">Преимущества</a>
             <a href="#how-it-works" class="block py-2 px-3 hover:bg-brand-light rounded-lg font-medium text-gray-700">Как это работает</a>
             <a href="#specifications" class="block py-2 px-3 hover:bg-brand-light rounded-lg font-medium text-gray-700">Характеристики</a>
-            <a href="#reviews" class="block py-2 px-3 hover:bg-brand-light rounded-lg font-medium text-gray-700">Отзывы</a>
-            <div class="pt-4 border-t border-gray-100 flex flex-col gap-3">
-                <a href="tel:+78005553535" class="flex items-center gap-2 px-3 text-brand-dark font-bold">
-                    <i data-lucide="phone" class="w-4 h-4 text-brand-emerald"></i> +7 (800) 555-35-35
-                </a>
-            </div>
         </div>
     </header>
 
-    <!-- ГЕРОЙ-БЛОК (HERO) -->
     <section class="hero-bg text-white pt-12 pb-20 md:py-24 relative overflow-hidden">
         <!-- Декоративные круги -->
         <div class="absolute w-[500px] h-[500px] bg-brand-medium/10 rounded-full blur-3xl -top-40 -left-40"></div>
@@ -169,15 +141,15 @@
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2 text-left max-w-lg mx-auto lg:mx-0">
                         <div class="flex items-start gap-2">
                             <i data-lucide="wifi-off" class="w-5 h-5 text-brand-accent shrink-0 mt-0.5"></i>
-                            <span class="text-sm font-medium text-emerald-50 text-emerald-100">Без интернета и Wi-Fi</span>
+                            <span class="text-sm font-medium text-emerald-100">Без интернета и Wi-Fi</span>
                         </div>
                         <div class="flex items-start gap-2">
                             <i data-lucide="droplet" class="w-5 h-5 text-brand-accent shrink-0 mt-0.5"></i>
-                            <span class="text-sm font-medium text-emerald-50 text-emerald-100">Влагозащита IP54</span>
+                            <span class="text-sm font-medium text-emerald-100">Влагозащита IP54</span>
                         </div>
                         <div class="flex items-start gap-2 col-span-2 sm:col-span-1">
                             <i data-lucide="battery-charging" class="w-5 h-5 text-brand-accent shrink-0 mt-0.5"></i>
-                            <span class="text-sm font-medium text-emerald-50 text-emerald-100">2 года на одной батарейке</span>
+                            <span class="text-sm font-medium text-emerald-100">2 года на одной батарейке</span>
                         </div>
                     </div>
 
@@ -198,85 +170,20 @@
                     </div>
                 </div>
 
-                <!-- Правая колонка (Интерактивный макет устройства) -->
+                <!-- Правая колонка (Фото товара) -->
                 <div class="lg:col-span-5 flex flex-col items-center justify-center relative">
                     <!-- Задний сияющий нимб -->
                     <div class="absolute w-72 h-72 bg-brand-medium/30 rounded-full blur-2xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
                     
-                    <!-- Интерактивная витрина устройств -->
-                    <div class="relative w-full max-w-[360px] aspect-[4/5] bg-white/5 backdrop-blur-lg rounded-3xl border border-white/10 p-6 shadow-2xl flex flex-col justify-between overflow-hidden">
-                        
-                        <!-- Значок "Протестируй меня" -->
-                        <div class="absolute top-4 right-4 bg-red-500/95 text-white text-[10px] font-bold tracking-widest px-2.5 py-1 rounded-full uppercase flex items-center gap-1 animate-pulse z-20">
-                            <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span> Жми кнопку!
-                        </div>
-
-                        <!-- 1. Беспроводной Приёмник (Черный прибор) -->
-                        <div class="relative z-10 flex flex-col items-center mb-6">
-                            <span class="text-[10px] text-emerald-200 font-semibold tracking-wider uppercase mb-1.5">Приёмник (в доме)</span>
-                            <!-- Сам корпус прибора -->
-                            <div class="w-40 h-24 bg-gray-900 rounded-2xl shadow-2xl border border-gray-800 flex flex-col items-center justify-center relative p-3 transition-all duration-300 transform hover:scale-105 group">
-                                <!-- Маленькая надпись бренда -->
-                                <span class="text-[8px] text-gray-500 tracking-widest uppercase font-mono mb-2">SEPTIC ALARM</span>
-                                
-                                <!-- Кнопка ТРЕВОГИ (Светящаяся красная) -->
-                                <button id="alarm-btn" class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center focus:outline-none border-4 border-gray-700 hover:border-gray-600 active:scale-90 transition-all shadow-lg" title="Нажмите для проверки звука">
-                                    <div id="alarm-light" class="w-4 h-4 bg-red-400 rounded-full shadow-[0_0_8px_#ef4444]"></div>
-                                </button>
-                                
-                                <span class="text-[9px] text-gray-400 mt-2 font-medium">Кнопка-индикатор</span>
-
-                                <!-- Вход Type-C снизу -->
-                                <div class="absolute -bottom-1 w-4 h-2 bg-gray-700 rounded-sm flex items-center justify-center">
-                                    <div class="w-2.5 h-0.5 bg-black"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Соединительная стрелка/волна дальности -->
-                        <div class="relative flex items-center justify-center py-2">
-                            <div class="h-0.5 w-full bg-gradient-to-r from-transparent via-emerald-500 to-transparent absolute"></div>
-                            <span class="bg-brand-emerald text-white text-[10px] px-3 py-0.5 rounded-full border border-emerald-400/30 font-medium relative z-10 flex items-center gap-1">
-                                <i data-lucide="radio" class="w-3 h-3 text-brand-accent animate-pulse"></i> Радиоканал до 30 метров
-                            </span>
-                        </div>
-
-                        <!-- 2. Герметичный Датчик/Передатчик (Серый прибор) -->
-                        <div class="relative z-10 flex flex-col items-center">
-                            <!-- Сам корпус серого прибора -->
-                            <div class="w-48 h-20 bg-gray-200 rounded-xl shadow-xl border border-gray-300 flex items-center justify-between p-3 relative transform hover:scale-105 transition-all">
-                                <!-- Крепежное ушко -->
-                                <div class="absolute -left-2 top-1/2 -translate-y-1/2 w-2 h-6 bg-gray-400 rounded-l"></div>
-                                <!-- Гермоввод для провода слева -->
-                                <div class="w-5 h-8 bg-gray-600 rounded-md -mr-1 shadow-inner flex flex-col justify-between py-1 px-0.5">
-                                    <div class="w-full h-1 bg-gray-400 rounded-sm"></div>
-                                    <div class="w-full h-1 bg-gray-400 rounded-sm"></div>
-                                </div>
-
-                                <div class="flex-1 px-2 flex flex-col justify-center">
-                                    <span class="text-[10px] text-gray-800 font-bold leading-tight">ПЕРЕДАТЧИК IP54</span>
-                                    <span class="text-[8px] text-emerald-700 font-semibold uppercase flex items-center gap-0.5 mt-0.5">
-                                        <i data-lucide="check" class="w-2.5 h-2.5"></i> Герметичный
-                                    </span>
-                                </div>
-
-                                <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center border border-gray-300 shadow-inner">
-                                    <i data-lucide="battery" class="w-6 h-6 text-gray-500"></i>
-                                </div>
-                            </div>
-                            <span class="text-[10px] text-emerald-200 font-semibold tracking-wider uppercase mt-1.5">Передатчик (в септик)</span>
-                        </div>
+                    <!-- Контейнер для фото товара -->
+                    <div class="relative w-full max-w-[380px] rounded-3xl overflow-hidden shadow-2xl border border-white/10 p-2 bg-white/5 backdrop-blur-md transition-transform duration-500 hover:scale-[1.03]">
+                        <img 
+                            src="image_2bf7fa.jpg" 
+                            alt="Аварийная беспроводная сигнализация SepticRF" 
+                            class="w-full h-auto rounded-2xl object-cover"
+                            onerror="this.onerror=null; this.src='https://placehold.co/400x500/064e3b/ffffff?text=SepticRF+Alarm';"
+                        />
                     </div>
-
-                    <!-- Интерактивный хинт -->
-                    <div class="mt-4 text-center">
-                        <button id="siren-test-btn" class="bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/30 text-white rounded-xl px-4 py-2 text-xs font-semibold flex items-center gap-2 transition-all shadow-md">
-                            <i data-lucide="volume-2" class="w-4 h-4 text-brand-accent"></i>
-                            Нажмите для теста сирены на макете
-                        </button>
-                        <p class="text-[10px] text-emerald-200/60 mt-1.5">Включите звук на устройстве перед нажатием</p>
-                    </div>
-
                 </div>
 
             </div>
@@ -292,7 +199,7 @@
                 </div>
                 <div>
                     <h4 class="font-extrabold text-brand-dark text-lg">Спецпредложение сегодня!</h4>
-                    <p class="text-sm text-gray-600">Скидка 35% + подарок при быстром оформлении заказа.</p>
+                    <p class="text-sm text-gray-600">Скидка 35% при оформлении заказа на сайте.</p>
                 </div>
             </div>
             <div class="flex items-center gap-4 bg-white px-6 py-3 rounded-2xl border border-emerald-100 shadow-sm">
@@ -309,11 +216,10 @@
         </div>
     </section>
 
-    <!-- ПРЕИМУЩЕСТВА (BENEFITS) -->
     <section id="benefits" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 class="text-base text-brand-medium font-bold uppercase tracking-wider">Почему выбирают нас</h2>
+                <h2 class="text-base text-brand-medium font-bold uppercase tracking-wider">Почему выбирают SepticRF</h2>
                 <p class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight">
                     Инновационная защита, продуманная до мелочей
                 </p>
@@ -351,7 +257,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-brand-dark mb-3">Двойное оповещение</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Громкий звуковой сигнал услышат все члены семьи, а яркий пульсирующий светодиод поможет определить тревогу даже в темноте или при шуме телевизора.
+                        Громкий звуковой сигнал услышат все члены семьи, а яркий пульсирующий светодиод поможет определить тревогу даже в темноте или при шуме.
                     </p>
                 </div>
 
@@ -362,7 +268,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-brand-dark mb-3">Герметичный корпус IP54</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Передатчик выполнен в промышленном пыле- и влагозащищенном корпусе с резиновыми уплотнителями. Конденсат и высокая влажность внутри септика ему не страшны.
+                        Передатчик выполнен в промышленном пыле- и влагозащищенном корпусе с резиновыми уплотнителями. Конденсат внутри септика ему не страшен.
                     </p>
                 </div>
 
@@ -384,7 +290,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-brand-dark mb-3">Установка за 5 минут</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Не нужно нанимать электрика и штробить стены. Просто повесьте датчик в септик, а приемник вставьте в любую зарядку Type-C у себя в доме. Готово!
+                        Не нужно нанимать электрика и штробить стены. Просто повесьте датчик в септик, а приемник вставьте в любой адаптер Type-C в доме.
                     </p>
                 </div>
 
@@ -392,13 +298,12 @@
         </div>
     </section>
 
-    <!-- СЕКЦИЯ: ИНТЕРАКТИВНЫЙ КВИЗ (Сделайте правильный выбор) -->
     <section class="py-16 bg-brand-light">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-emerald-100">
                 <div class="text-center mb-8 space-y-2">
                     <span class="text-xs font-bold uppercase tracking-wider text-brand-medium">Онлайн-тест</span>
-                    <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">Подойдёт ли устройство под ваш септик?</h3>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">Подойдет ли устройство под ваш септик?</h3>
                     <p class="text-sm text-gray-500">Ответьте на 3 простых вопроса и получите промокод на бесплатную доставку!</p>
                 </div>
 
@@ -448,7 +353,7 @@
                         <p class="font-bold text-gray-700 text-center">3. Случались ли у вас ранее засоры или переливы септика?</p>
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                             <button onclick="finishQuiz()" class="p-4 border border-gray-200 hover:border-brand-emerald hover:bg-brand-light rounded-xl text-center font-medium transition-all text-red-600">
-                                Да, и это было ужасно!
+                                Да, и это было неприятно
                             </button>
                             <button onclick="finishQuiz()" class="p-4 border border-gray-200 hover:border-brand-emerald hover:bg-brand-light rounded-xl text-center font-medium transition-all">
                                 К счастью, еще нет
@@ -477,7 +382,6 @@
         </div>
     </section>
 
-    <!-- КАК ЭТО РАБОТАЕТ (HOW IT WORKS) -->
     <section id="how-it-works" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -529,7 +433,6 @@
         </div>
     </section>
 
-    <!-- ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ -->
     <section id="specifications" class="py-20 bg-gray-50 border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -579,7 +482,7 @@
                     </div>
                 </div>
 
-                <!-- Правая сторона - Большой инфографик или рендер -->
+                <!-- Правая сторона - Большой инфографик -->
                 <div class="lg:col-span-5 space-y-6">
                     <div class="bg-brand-emerald rounded-3xl p-8 text-white relative overflow-hidden shadow-xl">
                         <!-- Декор сетка -->
@@ -617,11 +520,6 @@
                                     Кронштейны, крепеж и подробная инструкция
                                 </li>
                             </ul>
-
-                            <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs">
-                                <span>Гарантия производителя — 12 месяцев</span>
-                                <span class="bg-brand-accent px-2.5 py-1 rounded font-bold uppercase tracking-widest text-[9px]">ОТК пройдено</span>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -630,100 +528,6 @@
         </div>
     </section>
 
-    <!-- ОТЗЫВЫ КЛИЕНТОВ (REVIEWS) -->
-    <section id="reviews" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 class="text-base text-brand-medium font-bold uppercase tracking-wider font-bold">Опыт использования</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight">
-                    Отзывы наших покупателей
-                </p>
-                <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Отзыв 1 -->
-                <div class="reveal bg-gray-50 rounded-3xl p-8 border border-gray-100 flex flex-col justify-between hover:shadow-lg transition-all duration-300">
-                    <div class="space-y-4">
-                        <!-- Звездочки -->
-                        <div class="flex text-brand-yellow">
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        </div>
-                        <p class="text-gray-600 italic leading-relaxed">
-                            "Прошлым летом забился дренажный насос в септике, вовремя не заметили, и всё пошло верхом на газон. Запах стоял ужасный, пришлось вызывать ассенизатора и отмывать всё химией. Сразу после этого случая заказал эту сигнализацию. Позавчера она впервые сработала: запищала в гостиной. Оказалось, намотало тряпку на поплавок насоса. Спасла нас от повторения кошмара!"
-                        </p>
-                    </div>
-                    <div class="pt-6 border-t border-gray-200/60 mt-6 flex items-center gap-3">
-                        <div class="w-12 h-12 rounded-full bg-brand-emerald text-white font-black flex items-center justify-center">
-                            АК
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-brand-dark">Алексей К.</h4>
-                            <span class="text-xs text-brand-medium font-medium">МО, г. Истра — Владелец Топас-8</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Отзыв 2 -->
-                <div class="reveal bg-gray-50 rounded-3xl p-8 border border-gray-100 flex flex-col justify-between hover:shadow-lg transition-all duration-300" style="transition-delay: 100ms;">
-                    <div class="space-y-4">
-                        <div class="flex text-brand-yellow">
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        </div>
-                        <p class="text-gray-600 italic leading-relaxed">
-                            "Установил сам буквально за 10 минут. Самое сложное было залезть в септик, но по факту делов на пару пустяков. Приёмник включил в розетку на кухне. Проверял дальность — септик за баней в 25 метрах от дома, сигнал проходит отлично через две кирпичные стены. Простая и эффективная штука!"
-                        </p>
-                    </div>
-                    <div class="pt-6 border-t border-gray-200/60 mt-6 flex items-center gap-3">
-                        <div class="w-12 h-12 rounded-full bg-brand-emerald text-white font-black flex items-center justify-center">
-                            МВ
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-brand-dark">Михаил В.</h4>
-                            <span class="text-xs text-brand-medium font-medium">Ленинградская обл. — Септик из колец</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Отзыв 3 -->
-                <div class="reveal bg-gray-50 rounded-3xl p-8 border border-gray-100 flex flex-col justify-between hover:shadow-lg transition-all duration-300" style="transition-delay: 200ms;">
-                    <div class="space-y-4">
-                        <div class="flex text-brand-yellow">
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-                        </div>
-                        <p class="text-gray-600 italic leading-relaxed">
-                            "Отличная вещь, стоит копейки по сравнению с ремонтом компрессора септика (который сгорает сразу при затоплении). Доставили СДЭКом за 3 дня. Прибор собран очень добротно, пластик прочный, швы герметичные, батарейка уже была внутри. Очень радует, что не нужно тянуть провода по всему участку."
-                        </p>
-                    </div>
-                    <div class="pt-6 border-t border-gray-200/60 mt-6 flex items-center gap-3">
-                        <div class="w-12 h-12 rounded-full bg-brand-emerald text-white font-black flex items-center justify-center">
-                            ЕН
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-brand-dark">Елена Н.</h4>
-                            <span class="text-xs text-brand-medium font-medium">г. Екатеринбург — Владелица Астра-5</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ЦЕНА И ЗАКАЗ (ORDER FORM) -->
     <section id="order" class="py-20 bg-brand-dark text-white relative overflow-hidden">
         <!-- Декор фон -->
         <div class="absolute w-[600px] h-[600px] bg-brand-accent/5 rounded-full blur-3xl -bottom-80 -right-80"></div>
@@ -752,28 +556,13 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="space-y-4 max-w-md mx-auto lg:mx-0 text-sm text-emerald-100/80">
-                        <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-full bg-brand-emerald flex items-center justify-center text-emerald-300 shrink-0">
-                                <i data-lucide="shield-check" class="w-4 h-4"></i>
-                            </div>
-                            <span>100% Гарантия возврата денег, если прибор вам не подойдёт</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-full bg-brand-emerald flex items-center justify-center text-emerald-300 shrink-0">
-                                <i data-lucide="gift" class="w-4 h-4"></i>
-                            </div>
-                            <span>Подарок в комплекте: комплект крепежа «Быстрый старт»</span>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Правая сторона: Форма заказа -->
                 <div class="lg:col-span-6">
                     <div class="bg-white text-gray-900 rounded-3xl p-8 shadow-2xl border border-gray-100 max-w-md mx-auto relative">
                         <h3 class="text-2xl font-extrabold text-brand-dark mb-2 text-center">Оформить заказ</h3>
-                        <p class="text-gray-500 text-sm text-center mb-6">Заполните форму, и наш инженер свяжется с вами для подтверждения заказа в течение 10 минут</p>
+                        <p class="text-gray-500 text-sm text-center mb-6">Заполните форму, и наш специалист свяжется с вами для подтверждения заказа в течение 10 минут</p>
                         
                         <form id="orderForm" onsubmit="handleOrderSubmit(event)" class="space-y-4">
                             <div>
@@ -800,21 +589,6 @@
                                 Отправить заявку
                             </button>
                         </form>
-
-                        <div class="relative flex py-4 items-center justify-center">
-                            <div class="flex-grow border-t border-gray-200"></div>
-                            <span class="flex-shrink mx-4 text-xs text-gray-400 uppercase tracking-widest font-semibold">ИЛИ</span>
-                            <div class="flex-grow border-t border-gray-200"></div>
-                        </div>
-
-                        <!-- WhatsApp быстрая кнопка -->
-                        <a href="https://wa.me/78005553535?text=Здравствуйте!%20Хочу%20заказать%20беспроводную%20сигнализацию%20для%20септика." target="_blank" rel="noopener noreferrer" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-xl text-center flex items-center justify-center gap-2 transition-all shadow-md shadow-green-500/10 hover:shadow-green-500/30">
-                            <!-- Иконка WhatsApp вручную через SVG -->
-                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.453L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.59 2.017 14.113 1.01 11.48 1.01c-5.44 0-9.866 4.372-9.87 9.802 0 1.689.451 3.336 1.307 4.787l-.988 3.606 3.71-.96z"/>
-                            </svg>
-                            Заказать через WhatsApp
-                        </a>
 
                         <!-- Защита персональных данных -->
                         <p class="text-[10px] text-gray-400 text-center mt-4">
@@ -889,7 +663,6 @@
         </div>
     </section>
 
-    <!-- ФУТЕР (FOOTER) -->
     <footer class="bg-gray-900 text-gray-400 pt-16 pb-8 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <!-- Бренд -->
@@ -898,7 +671,7 @@
                     <div class="w-8 h-8 bg-brand-emerald rounded-lg flex items-center justify-center text-white">
                         <i data-lucide="shield-alert" class="w-5 h-5"></i>
                     </div>
-                    <span class="text-lg font-bold text-white tracking-tight">СЕПТИК-SOS</span>
+                    <span class="text-lg font-bold text-white tracking-tight">SepticRF</span>
                 </div>
                 <p class="text-xs text-gray-500 leading-relaxed">
                     Разработка и производство беспроводных систем контроля уровня жидкости и аварийной сигнализации для частных загородных систем водоотведения.
@@ -912,7 +685,6 @@
                     <li><a href="#benefits" class="hover:text-white transition-colors">Преимущества</a></li>
                     <li><a href="#how-it-works" class="hover:text-white transition-colors">Как это работает</a></li>
                     <li><a href="#specifications" class="hover:text-white transition-colors">Характеристики</a></li>
-                    <li><a href="#reviews" class="hover:text-white transition-colors">Отзывы клиентов</a></li>
                 </ul>
             </div>
 
@@ -923,7 +695,6 @@
                     <li><a href="#" class="hover:text-white transition-colors">Пользовательское соглашение</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Политика конфиденциальности</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Сертификаты соответствия</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Партнерская программа</a></li>
                 </ul>
             </div>
 
@@ -932,12 +703,8 @@
                 <h4 class="text-white font-bold text-sm uppercase tracking-wider">Контакты</h4>
                 <ul class="space-y-2 text-xs">
                     <li class="flex items-center gap-2">
-                        <i data-lucide="phone" class="w-4 h-4 text-brand-accent"></i>
-                        <a href="tel:+78005553535" class="hover:text-white transition-colors">+7 (800) 555-35-35</a>
-                    </li>
-                    <li class="flex items-center gap-2">
                         <i data-lucide="mail" class="w-4 h-4 text-brand-accent"></i>
-                        <a href="mailto:info@septic-sos.ru" class="hover:text-white transition-colors">info@septic-sos.ru</a>
+                        <a href="mailto:info@septic-rf.ru" class="hover:text-white transition-colors">info@septic-rf.ru</a>
                     </li>
                     <li class="flex items-center gap-2">
                         <i data-lucide="map-pin" class="w-4 h-4 text-brand-accent"></i>
@@ -948,7 +715,7 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-            <p>&copy; 2026 СЕПТИК-SOS. Все права защищены.</p>
+            <p>&copy; 2026 SepticRF. Все права защищены.</p>
             <div class="flex gap-4">
                 <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-emerald hover:text-white transition-all">
                     <!-- VK Icon -->
@@ -979,7 +746,6 @@
         </div>
     </div>
 
-    <!-- СКРИПТЫ -->
     <script>
         // Инициализация Lucide Icons
         lucide.createIcons();
@@ -1041,17 +807,14 @@
         
         function tickStock() {
             if (stockLeft > 2) {
-                // Шанс уменьшения остатка случайным образом
                 if (Math.random() > 0.6) {
                     stockLeft--;
                     stockCounter.innerText = stockLeft;
-                    // Подсветить уменьшение красным импульсом
                     stockCounter.classList.add('scale-125', 'text-red-500');
                     setTimeout(() => {
                         stockCounter.classList.remove('scale-125', 'text-red-500');
                     }, 500);
                 }
-                // Случайный интервал от 15 до 45 секунд
                 setTimeout(tickStock, Math.random() * 30000 + 15000);
             }
         }
@@ -1082,94 +845,14 @@
             }
         }
 
-        // 7. СИМУЛЯТОР СИРЕНЫ (Web Audio API + Анимация на макете прибора)
-        let audioCtx = null;
-        let isSirenPlaying = false;
-        let alarmInterval = null;
-
-        const alarmBtn = document.getElementById('alarm-btn');
-        const alarmLight = document.getElementById('alarm-light');
-        const sirenTestBtn = document.getElementById('siren-test-btn');
-
-        function startSiren() {
-            if (isSirenPlaying) return;
-            isSirenPlaying = true;
-            
-            // Запуск визуальной тревоги
-            alarmLight.classList.add('animate-alarm');
-            alarmBtn.classList.add('border-red-500');
-            sirenTestBtn.innerHTML = `<i data-lucide="volume-x" class="w-4 h-4 text-brand-accent animate-spin"></i> Выключить сирену`;
-            lucide.createIcons();
-
-            // Создаем аудиоконтекст при первом клике пользователя
-            if (!audioCtx) {
-                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-            }
-
-            // Пьезо-звук тревоги (чередующийся высокий и низкий писк)
-            let highPitch = true;
-            alarmInterval = setInterval(() => {
-                if (!audioCtx) return;
-                
-                let osc = audioCtx.createOscillator();
-                let gainNode = audioCtx.createGain();
-                
-                osc.type = 'sine';
-                // Чередуем частоту для создания эффекта сирены/пищалки
-                osc.frequency.setValueAtTime(highPitch ? 2900 : 2500, audioCtx.currentTime);
-                
-                gainNode.gain.setValueAtTime(0.08, audioCtx.currentTime); // Умеренная громкость
-                gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.15); // Быстрое затухание
-                
-                osc.connect(gainNode);
-                gainNode.connect(audioCtx.destination);
-                
-                osc.start();
-                osc.stop(audioCtx.currentTime + 0.18);
-                
-                highPitch = !highPitch;
-            }, 250);
-        }
-
-        function stopSiren() {
-            if (!isSirenPlaying) return;
-            isSirenPlaying = false;
-
-            // Сброс визуальной тревоги
-            alarmLight.classList.remove('animate-alarm');
-            alarmBtn.classList.remove('border-red-500');
-            sirenTestBtn.innerHTML = `<i data-lucide="volume-2" class="w-4 h-4 text-brand-accent"></i> Нажмите для теста сирены на макете`;
-            lucide.createIcons();
-
-            // Остановка аудиогенератора
-            if (alarmInterval) {
-                clearInterval(alarmInterval);
-                alarmInterval = null;
-            }
-        }
-
-        function toggleSiren() {
-            if (isSirenPlaying) {
-                stopSiren();
-            } else {
-                startSiren();
-                // Автоматическое отключение через 5 секунд, чтобы не надоедать пользователю
-                setTimeout(stopSiren, 5000);
-            }
-        }
-
-        alarmBtn.addEventListener('click', toggleSiren);
-        sirenTestBtn.addEventListener('click', toggleSiren);
-
-        // 8. Обработка отправки формы
+        // 7. Обработка отправки формы
         function handleOrderSubmit(event) {
             event.preventDefault();
             
             const nameInput = document.getElementById('name').value;
             const phoneInput = document.getElementById('phone').value;
 
-            // Здесь можно настроить отправку лида через fetch на ваш бэкенд, Telegram-бот или Webhook
-            console.log('Новый заказ:', { name: nameInput, phone: phoneInput });
+            console.log('Новый заказ в SepticRF:', { name: nameInput, phone: phoneInput });
 
             // Показываем модальное окно успешного заказа
             const successModal = document.getElementById('successModal');
