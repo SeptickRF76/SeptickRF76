@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeptiAlarm — Аварийная беспроводная сигнализация для септика</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: {
+                            light: '#2563eb',
+                            DEFAULT: '#1e3a8a',
+                            dark: '#172554',
+                        },
+                        brandOrange: {
+                            light: '#fbbf24',
+                            DEFAULT: '#f59e0b',
+                            dark: '#d97706',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #2563eb 0%, #1e3a8a 50%, #172554 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-gradient::before {
+            content: "";
+            position: absolute;
+            top: -10%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: rgba(245, 158, 11, 0.1);
+            border-radius: 50%;
+            filter: blur(80px);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .btn-shadow {
+            box-shadow: 0 4px 14px 0 rgba(245, 158, 11, 0.39);
+        }
+        .btn-shadow:hover {
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-900 bg-gray-50">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 transition-all duration-300 py-4" id="main-header">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-brandBlue tracking-tight flex items-center gap-2">
+                <i class="fa-solid fa-droplet text-brandOrange"></i>
+                <span>Septi<span class="text-brandOrange">Alarm</span></span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-gray-600">
+                <a href="#features" class="hover:text-brandBlue transition-colors">Преимущества</a>
+                <a href="#how-it-works" class="hover:text-brandBlue transition-colors">Как это работает</a>
+                <a href="#reviews" class="hover:text-brandBlue transition-colors">Отзывы</a>
+                <a href="#order" class="bg-brandBlue text-white px-5 py-2 rounded-full hover:bg-brandBlue-dark transition-all">Заказать</a>
+            </nav>
+            <!-- Mobile Menu Toggle -->
+            <div class="md:hidden text-brandBlue text-2xl cursor-pointer" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-xl py-6 px-4 flex flex-col gap-4 text-center md:hidden">
+            <a href="#features" class="py-2 font-medium" onclick="toggleMenu()">Преимущества</a>
+            <a href="#how-it-works" class="py-2 font-medium" onclick="toggleMenu()">Как это работает</a>
+            <a href="#reviews" class="py-2 font-medium" onclick="toggleMenu()">Отзывы</a>
+            <a href="#order" class="py-2 font-bold text-brandBlue" onclick="toggleMenu()">Заказать</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center pt-20 text-white">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="inline-block px-4 py-1 rounded-full glass text-sm font-semibold mb-6">
+                    🚀 Новое поколение защиты вашего дома
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+                    Не допускайте <span class="text-brandOrange">аварий!</span>
+                </h1>
+                <p class="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed">
+                    Беспроводная система контроля уровня септика. Получите мгновенное уведомление о переполнении до того, как случится беда. Надежно, автономно и просто в установке.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#order" class="bg-brandOrange text-white px-8 py-4 rounded-xl text-center font-bold text-lg btn-shadow transition-all transform hover:scale-105 active:scale-95">
+                        Заказать сейчас
+                    </a>
+                    <a href="#features" class="glass px-8 py-4 rounded-xl text-center font-semibold text-lg hover:bg-white/20 transition-all">
+                        Узнать больше
+                    </a>
+                </div>
+                <div class="mt-8 flex items-center gap-4 text-sm text-blue-200">
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-check text-brandOrange"></i> Гарантия 2 года</span>
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-check text-brandOrange"></i> Скидка 10% на первый заказ</span>
+                </div>
+            </div>
+            <div class="relative" data-aos="zoom-in" data-aos-duration="1200">
+                <!-- Placeholder for Product Image / Illustration -->
+                <div class="relative z-10 bg-white/10 p-4 rounded-3xl glass backdrop-blur-lg shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800" alt="Контроллер сигнализации" class="rounded-2xl shadow-inner">
+                    <div class="absolute -bottom-6 -left-6 bg-white text-brandBlue p-4 rounded-2xl shadow-xl animate-bounce hidden md:block">
+                        <p class="text-xs font-bold uppercase opacity-60">Статус системы</p>
+                        <p class="text-lg font-extrabold">Все в норме ✅</p>
+                    </div>
+                </div>
+                <!-- Decorative Circles -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-brandOrange/20 rounded-full filter blur-3xl -z-10"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="features" class="py-24 bg-white">
+        <div class="container mx-auto px-4 text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-brandBlue mb-4" data-aos="fade-up">Почему выбирают SeptiAlarm?</h2>
+            <p class="text-gray-500 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Мы объединили передовые технологии радиосвязи и максимальную простоту использования, чтобы вы больше не беспокоились о состоянии вашего септика.
+            </p>
+        </div>
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <!-- Benefit 1 -->
+            <div class="p-8 rounded-3xl bg-gray-50 hover:bg-white hover:shadow-2xl transition-all border border-transparent hover:border-brandBlue/10 group" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-16 h-16 bg-brandBlue text-white rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:rotate-12 transition-transform">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brandBlue">Мгновенное оповещение</h3>
+                <p class="text-gray-600 leading-relaxed">Система отправит SMS или push-уведомление, как только уровень жидкости достигнет критической отметки.</p>
+            </div>
+            <!-- Benefit 2 -->
+            <div class="p-8 rounded-3xl bg-gray-50 hover:bg-white hover:shadow-2xl transition-all border border-transparent hover:border-brandBlue/10 group" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-16 h-16 bg-brandBlue text-white rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:rotate-12 transition-transform">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brandBlue">Установка за 5 минут</h3>
+                <p class="text-gray-600 leading-relaxed">Никаких штроб и прокладки кабелей через весь участок. Беспроводной датчик устанавливается за считанные минуты.</p>
+            </div>
+            <!-- Benefit 3 -->
+            <div class="p-8 rounded-3xl bg-gray-50 hover:bg-white hover:shadow-2xl transition-all border border-transparent hover:border-brandBlue/10 group" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-16 h-16 bg-brandBlue text-white rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:rotate-12 transition-transform">
+                    <i class="fa-solid fa-wifi"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brandBlue">Работает без интернета</h3>
+                <p class="text-gray-600 leading-relaxed">Используется надежный GSM-модуль и радиоканал. Связь будет даже там, где не ловит Wi-Fi.</p>
+            </div>
+            <!-- Benefit 4 -->
+            <div class="p-8 rounded-3xl bg-gray-50 hover:bg-white hover:shadow-2xl transition-all border border-transparent hover:border-brandBlue/10 group" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-16 h-16 bg-brandBlue text-white rounded-2xl flex items-center justify-center text-2xl mb-6 
